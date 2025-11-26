@@ -4,10 +4,187 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: rgb(48, 48, 48);
 }
 
 body {
-    background-color: rgba(255, 255, 255, 0.829);
+    background-color: rgba(243, 234, 252, 0.979);
     font-family: "DM Sans", sans-serif;
     font-weight: 400;
+}
+
+.box {
+    width: auto;
+    justify-self: center ;
+    margin-top: 10rem;
+    margin: 10rem;
+    border-radius: 30px;
+    border-width: 10px;
+    border-color: white;
+    border-style: solid;
+    background-color: white;
+}
+
+.singinheader {
+
+    justify-self: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.singinheader img {
+    margin-top: 2rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    margin-bottom: 0rem;
+    align-self: center;
+    border-radius: 2rem;
+    width: 4.5rem;
+
+}
+
+.singinheader h1 {
+    font-size: 1rem;
+    align-self: center;
+    margin: 1rem;
+    font-style: normal;
+}
+
+.singinheader p {
+    font-size:1rem;
+    align-self: center;
+    margin-bottom: 3rem;
+    color: rgb(77, 76, 76);
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.email {
+    display: flex;
+    flex-direction: column;
+    position: relative; /* for possible absolute icon method */
+}
+
+.email label{
+    font-size: large;
+    margin-bottom: 0.5rem;
+}
+
+.email input{
+    border-radius: 0.4rem;
+    margin-bottom: 1rem;
+    border-style:inset;
+    width: 26rem;
+    height: 3rem;
+    justify-self: center;
+    border-color: rgb(155, 151, 151);
+    border-style: solid;
+    padding-left: 44px; /* make room for email icon */
+    background: url('images/e-mail.png') no-repeat 12px center;
+    background-size: 20px 20px;
+}
+
+.email input::placeholder {
+    font-size: 1rem;
+    padding: 1rem;
+}
+
+
+.password {
+    display: flex;
+    flex-direction: column;
+    position: relative; /
+}
+
+
+.password label{
+    font-size: large;
+    margin-bottom: 0.5rem;
+}
+
+.password input{
+    border-radius: 0.4rem;
+    margin-bottom: 1rem;
+    border-style:inset;
+    height: 3rem;
+    justify-self: center;
+    border-color: rgb(155, 151, 151);
+    border-style: solid;
+    padding-left: 44px; /* make room for email icon */
+    background: url('images/trancar.png') no-repeat 12px center;
+    background-size: 20px 20px;
+    margin-bottom: 2ch;
+}
+
+.password input::placeholder {
+    font-size: 1rem;
+    padding: 1rem;
+}
+
+.opcoes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+
+}
+
+.remember {
+    display: flex;
+    align-items: center;
+    margin-left: 2rem;
+    font-size: 1rem;
+}
+
+.remember input {
+    margin-right: 0.5rem; 
+    min-width: 1rem;
+    min-height: 1rem;
+}
+
+.opcoes a {
+    display: flex;
+    align-items: center;
+    margin-left: 2rem;
+    font-size: 1rem;
+    margin-right: 2rem;
+    color: blueviolet;
+    text-decoration: none;
+}
+
+.signinbtn {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+
+}
+
+.signinbtn input {
+    width: 20rem;
+    height: 3rem;
+    border-radius: 1rem;
+    border: none;
+    background-color: blueviolet;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.dont {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+.dont p {
+    font-size: 1rem;
+}
+.dont a {
+    color: blueviolet;
+    text-decoration: none;
+    font-weight: 600;
 }
